@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="aquamarine.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-  <script src="js/navbar-ontop.js"></script>
+  <!-- <script src="js/navbar-ontop.js"></script> -->
   <!-- Script: Animated entrance -->
   <script src="js/animate-in.js"></script>
 </head>
@@ -95,18 +95,51 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center"> ¿Cómo hago para hacer los exámenes del Servicio Civil?
-              <span class="badge badge-primary badge-pill"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"> ¿Qué requisitos necesito para participar en un concurso del Servicio Civil? </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"> ¿Con que frecuencia se hacen los exámenes del Servicio Civil? </li>
-          </ul>
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center"> ¿Qué es un concurso? </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"> ¿Cuál es el proceso de un concurso? </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center"> ¿Cómo se incluyen los oferentes en los diferentes registros de elegibles? </li>
-          </ul>
+		<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-Card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		¿Cómo hago para hacer los exámenes del Servicio Civil?
+		</button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+	  Los exámenes o pruebas sólo se realizan cuando se publica un concurso. Estas publicaciones se realizan en los principales periódicos del país y/o en nuestra página web y en ellas se indica todo el procedimiento por seguir. En todos nuestros concursos, las personas interesadas se inscriben vía web y se les otorga una cita para que presenten sus atestados académicos y laborales conjuntamente con su oferta.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-Card collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          ¿Qué requisitos necesito para participar en un concurso del Servicio Civil?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+	  Ser costarricense o tener condición migratoria al día. Completar la Oferta de Servicio facilitada por la Dirección General de Servicio Civil o disponible en la página web. Original y copia de atestados académicos y experiencia laboral. Ninguno de los trámites que brinda el Servicio Civil tienen costo para el oferente.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-Card collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          ¿Con que frecuencia se hacen los exámenes del Servicio Civil?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+	  Los exámenes o pruebas se efectúan únicamente cuando hay un concurso: no hay periodicidad definida para efectuar las pruebas.
+      </div>
+    </div>
+  </div>
+</div>	
         </div>
       </div>
     </div>
