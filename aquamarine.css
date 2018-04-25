@@ -6218,3 +6218,45 @@ body > * {
   .animate-in-right.out-of-viewport {
     opacity: 0;
     left: 5%; }
+    .card > .card-header.procedure-header{
+      background-color: #f3f3f3;
+      text-align: left;
+      padding: 1rem 1rem 0.5rem 1rem;
+      border-bottom: 1px solid #003A4E; }
+    .card > .card-header.procedure-header::after{
+      display: block;
+      
+    }
+    
+    .card-body{
+      padding: 1rem 0 0;
+      text-align: left; }
+      .card-body > p {
+        padding: 0 1rem }
+      .card > .info-bar {
+        padding: 0.5rem 3rem; 
+        background-color: #CCC;
+        list-style: none; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+        margin-bottom: 8px}
+          .info-bar > li {
+            color: #414141;
+            font-weight: bold; }
+          .info-bar > li.label {
+            flex-grow: 3; }
+            .info-bar > li.label > label{
+              margin: 0 }
+          .info-bar > li.action-item {
+            flex-grow: 1; }
+            .info-bar > li.action-item > a > .action-icon {
+              color: #9c9c9c; }
+              .info-bar > li.action-item > a > .action-icon:hover{
+              color: #003A4E;  }  
+    
+    .col-fluid{
+      display: flex;
+      align-items: stretch; 
+      margin-bottom: 1rem;}          
+    
